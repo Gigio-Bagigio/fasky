@@ -1,0 +1,12 @@
+customtkinter
+pyautogui
+keyboard
+pynput
+pywinstyles
+pywin32
+hPyT
+pystray
+Pillow
+pystray
+langdetect
+deep-translator 
