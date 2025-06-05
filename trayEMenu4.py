@@ -929,10 +929,10 @@ def setup_tray_icon():
     """Configura l'icona nel tray di sistema."""
     # Crea un'icona per il tray (idealmente crea un'icona specifica)
     # Per ora utilizziamo un'icona generica (crea un quadrato blu)
-    #icon_image = Image.new('RGB', (64, 64), color=PRIMARY_COLOR)
+    icon_image = Image.new('RGB', (64, 64), color=PRIMARY_COLOR)
     
     # Percorso per l'icona
-    icon_path = f"tray_icon.png"
+    """icon_path = f"tray_icon.png"
     
     # Se non esiste, crea un'icona predefinita
     if not os.path.exists(icon_path):
@@ -941,7 +941,7 @@ def setup_tray_icon():
         try:
             icon_image = Image.open(icon_path)
         except Exception as e:
-            print(f"Errore nel caricamento dell'icona: {e}")
+            print(f"Errore nel caricamento dell'icona: {e}")"""
     
     # Crea l'icona del tray
     icon = pystray.Icon(
