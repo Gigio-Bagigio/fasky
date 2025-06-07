@@ -114,14 +114,6 @@ Each profile consists of:
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Development Guidelines
-- Follow existing code style and structure
-- Test all registry modifications thoroughly
-- Ensure compatibility with Windows 10/11
-- Add appropriate error handling for system operations
-
-Please make sure to update tests as appropriate.
-
 ## License
 
 FASKY © 2025 by Gigio-Bagigio is licensed under [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/).
