@@ -2,6 +2,9 @@
 
 FASKY is a comprehensive Windows productivity application that enhances your desktop experience with advanced keyboard shortcuts, text manipulation tools, and desktop profile management capabilities.
 
+!!! the keys repetition is blocked by "noreps.exe" a c++ script that block alphanumeric keys (if they are pressed individually, then it does not block repetition if ctrl or other keys are also pressed), i will publish the code soon, now there is the base64 code of the exe in norepsText.py !!!
+
+!!! TO RUN THE CODE YOU NEED TO RUN auto5.py !!!!
 ## Features
 
 ### Core FASKY Functions (app.py)
