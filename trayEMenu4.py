@@ -12,7 +12,7 @@ import threading
 import pystray  
 import sys
 import tkinter as tk
-from auto5 import (
+from app import (
     AppFinder, 
     ProfileManager, 
     ProfileEditorWindow, 
@@ -21,7 +21,7 @@ from auto5 import (
     App
 )
 from prvUseAuto2 import create_profile, execute_profile, profile_manager, aggiorna
-from app import FaskyApp
+from faskyMain import FaskyApp
 root = None
 _app = None
 auto = None

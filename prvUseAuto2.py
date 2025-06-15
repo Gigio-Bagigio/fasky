@@ -7,7 +7,7 @@ import argparse
 
 # Importa le classi e funzioni dal file originale
 try:
-    from auto5 import (
+    from app import (
         AppFinder, 
         ProfileManager, 
         ProfileEditorWindow,
