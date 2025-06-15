@@ -680,7 +680,7 @@ def change_profile(profile):
     profile_var.set(profile)
     
     # Aggiorna l'etichetta del profilo
-    profile_label.configure(text=f"Profilo: {profile}")
+    profile_label.configure(text=f"Profile: {profile}")
     
     # Carica le informazioni del profilo
     try:
@@ -1121,19 +1121,9 @@ header_frame.pack(fill="x", pady=(0, 10))
 title_label = ctk.CTkLabel(header_frame, text="Desktop Profile Manager", font=ctk.CTkFont(size=24, weight="bold"))
 title_label.pack(side="left", padx=10)
 
-# Aggiungi pulsante per minimizzare nel tray
-tray_button = ctk.CTkButton(
-    header_frame,
-    text="Minimizza nel Tray",
-    command=minimize_to_tray,
-    fg_color=ACCENT_COLOR,
-    hover_color=PRIMARY_COLOR,
-    width=150
-)
-tray_button.pack(side="right", padx=10)
 
-# Profili disponibili (scrollable)
-profiles_label = ctk.CTkLabel(main_frame, text="Profili disponibili:", font=ctk.CTkFont(size=16))
+# Available profiles (scrollable)
+profiles_label = ctk.CTkLabel(main_frame, text="Available profiles:", font=ctk.CTkFont(size=16))
 profiles_label.pack(anchor="w", padx=10, pady=(5, 0))
 
 profiles_container = ctk.CTkFrame(main_frame)
@@ -1149,7 +1139,7 @@ content_frame.pack(fill="both", expand=True, padx=10, pady=10)
 profile_label = ctk.CTkLabel(content_frame, text="", font=ctk.CTkFont(size=20, weight="bold"))
 profile_label.pack(pady=(10, 5))
 
-temp_label = ctk.CTkLabel(content_frame, text="Profilo temporaneo attivo", 
+temp_label = ctk.CTkLabel(content_frame, text="Temporary active profile", 
                          font=ctk.CTkFont(size=14), 
                          text_color=TEMP_COLOR)
 
@@ -1162,7 +1152,7 @@ action_frame.pack(pady=10, fill="x")
 
 load_button = ctk.CTkButton(
     action_frame, 
-    text="Carica Profilo", 
+    text="Change Profile", 
     command=carica_profilo,
     fg_color=PRIMARY_COLOR,
     hover_color=ACCENT_COLOR,
@@ -1174,7 +1164,7 @@ load_button.pack(side="left", padx=5)
 
 delete_button = ctk.CTkButton(
     action_frame, 
-    text="Elimina Profilo", 
+    text="Delete Profile", 
     command=elimina_profilo,
     fg_color=DANGER_COLOR,
     hover_color="#c1121f",
@@ -1185,7 +1175,7 @@ delete_button = ctk.CTkButton(
 delete_button.pack(side="left", padx=5)
 rinomina_button = ctk.CTkButton(
     action_frame, 
-    text="Rinomina Profilo", 
+    text="Rename Profile", 
     command=rinomina_profilo_ui,
     fg_color="#b6a12b",
     hover_color="#c1121f",
@@ -1202,7 +1192,7 @@ temp_frame.pack(pady=10, fill="x")
 
 temp_button = ctk.CTkButton(
     temp_frame, 
-    text="Apri Desktop Temporaneo", 
+    text="Open Temporary Desktop", 
     command=apri_desktop_temporaneo,
     fg_color=TEMP_COLOR,
     hover_color="#e76f51",
@@ -1214,7 +1204,7 @@ temp_button.pack(side="left", padx=5)
 
 default_button = ctk.CTkButton(
     temp_frame, 
-    text="Ripristina Desktop Predefinito", 
+    text="Back to Default Desktop", 
     command=ripristina_desktop_default,
     fg_color=SUCCESS_COLOR,
     hover_color="#1d7d74",
@@ -1228,13 +1218,13 @@ default_button.pack(side="left", padx=5)
 create_frame = ctk.CTkFrame(main_frame)
 create_frame.pack(fill="x", padx=10, pady=10)
 
-ctk.CTkLabel(create_frame, text="Crea nuovo profilo:", font=ctk.CTkFont(size=16)).pack(side="left", padx=10)
+ctk.CTkLabel(create_frame, text="Create New Profile:", font=ctk.CTkFont(size=16)).pack(side="left", padx=10)
 profile_entry = ctk.CTkEntry(create_frame, width=200)
 profile_entry.pack(side="left", padx=10)
 
 create_button = ctk.CTkButton(
     create_frame, 
-    text="Crea Profilo", 
+    text="Create Profile", 
     command=crea_profilo,
     fg_color=SUCCESS_COLOR,
     hover_color="#1d7d74",
@@ -1249,7 +1239,7 @@ status_frame.pack(fill="x", padx=10, pady=5)
 status_label = ctk.CTkLabel(status_frame, text="", font=ctk.CTkFont(size=12))
 status_label.pack(side="left", padx=10)
 
-version_label = ctk.CTkLabel(status_frame, text="v2.2", font=ctk.CTkFont(size=12))
+version_label = ctk.CTkLabel(status_frame, text="v4", font=ctk.CTkFont(size=12))
 version_label.pack(side="right", padx=10)
 
 # Controlla se c'è un profilo temporaneo attivo all'avvio
@@ -1261,7 +1251,7 @@ context_menu_frame = ctk.CTkFrame(main_frame)
 context_menu_frame.pack(fill="x", padx=10, pady=10)
 register_button = ctk.CTkButton(
     context_menu_frame, 
-    text="aggiungi shortcut tasto destro", 
+    text="Add right button shortcut", 
     command=register_context_menu,
     fg_color=PRIMARY_COLOR,
     hover_color=ACCENT_COLOR,
@@ -1271,7 +1261,7 @@ register_button.pack(side="left", padx=10)
 
 unregister_button = ctk.CTkButton(
     context_menu_frame, 
-    text="rimuovi shortcut", 
+    text="Rempve Shortcut", 
     command=unregister_context_menu,
     fg_color=DANGER_COLOR,
     hover_color="#c1121f",

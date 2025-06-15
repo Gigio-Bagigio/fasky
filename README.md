@@ -14,6 +14,8 @@ FASKY is a comprehensive Windows productivity application that enhances your des
 - **Translator**: Select text and press `Ctrl + F8` to translate between English and Italian with automatic language detection.
 - **Clipboard Manager**: Multiple clipboard slots for your notes (still in development with some bugs).
 
+![image](faskyMain.png)
+
 ### Desktop Profile Manager (trayEMenu4.py)
 - **Profile Management**: Create, save, load, and delete desktop icon layouts and themes
 - **Temporary Desktop**: Quickly switch to any folder as a temporary desktop without permanently changing your setup
@@ -21,6 +23,7 @@ FASKY is a comprehensive Windows productivity application that enhances your des
 - **System Tray Integration**: Full control from the system tray with context menus
 - **Registry Integration**: Right-click context menu options for folders to create profiles or open as temporary desktops
 - **Profile Automation**: Link desktop profiles with custom automation scripts
+![image](DesktopManager.png)
 
 ## Installation
 
