@@ -1,5 +1,6 @@
 # FASKY 
 
+
 FASKY is a comprehensive Windows productivity application that enhances your desktop experience with advanced keyboard shortcuts, text manipulation tools, and desktop profile management capabilities.
 
 !!! the keys repetition is blocked by "noreps.exe" a c++ script that block alphanumeric keys (if they are pressed individually, then it does not block repetition if ctrl or other keys are also pressed), i will publish the code soon, now there is the base64 code of the exe in norepsText.py !!!
@@ -10,15 +11,15 @@ FASKY is a comprehensive Windows productivity application that enhances your des
 ### Core FASKY Functions (faskyMain.py)
 - **QuickShift**: The main function that uses prolonged key pressure to exploit keys as shortcuts. By default, holding a character for more than 0.3s rewrites it in uppercase. Holding numeric characters produces symbols like arrows. All alphanumeric keys are customizable with both characters and entire sentences.
 
-![til](quickShift.gif)
+![til](media/quickShift.gif)
 - **Text Concatenator**: Avoids consecutive copy and paste operations. Press `Ctrl+Shift+C` to concatenate all copied text, then release with a simple `Ctrl+V`.
 - **Case Converter**: Fixes text case mistakes instantly. Select text and press `Shift + Caps Lock` to convert between uppercase and lowercase (abcd → ABCD).
 
-![til](caseConverter.gif)
+![til](media/caseConverter.gif)
 - **Translator**: Select text and press `Ctrl + F8` to translate between English and Italian with automatic language detection.
 - **Clipboard Manager**: Multiple clipboard slots for your notes (still in development with some bugs).
 
-![image](faskyMain.png)
+![image](media/faskyMain.png)
 
 ### Desktop Profile Manager (trayEMenu4.py)
 - **Profile Management**: Create, save, load, and delete desktop icon layouts and themes
@@ -27,7 +28,7 @@ FASKY is a comprehensive Windows productivity application that enhances your des
 - **System Tray Integration**: Full control from the system tray with context menus
 - **Registry Integration**: Right-click context menu options for folders to create profiles or open as temporary desktops
 - **Profile Automation**: Link desktop profiles with custom automation scripts
-![image](DesktopManager.png)
+![image](media/DesktopManager.png)
 
 ## Installation
 

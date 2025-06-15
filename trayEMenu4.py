@@ -1251,7 +1251,7 @@ context_menu_frame = ctk.CTkFrame(main_frame)
 context_menu_frame.pack(fill="x", padx=10, pady=10)
 register_button = ctk.CTkButton(
     context_menu_frame, 
-    text="Add right button shortcut", 
+    text="Add Right Button Shortcut", 
     command=register_context_menu,
     fg_color=PRIMARY_COLOR,
     hover_color=ACCENT_COLOR,
@@ -1261,7 +1261,7 @@ register_button.pack(side="left", padx=10)
 
 unregister_button = ctk.CTkButton(
     context_menu_frame, 
-    text="Rempve Shortcut", 
+    text="Remove Shortcut", 
     command=unregister_context_menu,
     fg_color=DANGER_COLOR,
     hover_color="#c1121f",
