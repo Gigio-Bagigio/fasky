@@ -7,7 +7,7 @@ FASKY is a comprehensive Windows productivity application that enhances your des
 !!! TO RUN THE CODE YOU NEED TO RUN app.py for the desktop manager + the keyboard functions, faskyMain for only the keyboard functions !!!!
 ## Features
 
-### Core FASKY Functions (app.py)
+### Core FASKY Functions (faskyMain.py)
 - **QuickShift**: The main function that uses prolonged key pressure to exploit keys as shortcuts. By default, holding a character for more than 0.3s rewrites it in uppercase. Holding numeric characters produces symbols like arrows. All alphanumeric keys are customizable with both characters and entire sentences.
 - **Text Concatenator**: Avoids consecutive copy and paste operations. Press `Ctrl+Shift+C` to concatenate all copied text, then release with a simple `Ctrl+V`.
 - **Case Converter**: Fixes text case mistakes instantly. Select text and press `Shift + Caps Lock` to convert between uppercase and lowercase (abcd → ABCD).
@@ -31,23 +31,16 @@ Make sure you have Python installed on your system, then install the required de
 pip install -r requirements.txt
 ```
 
-### Required Dependencies
-- `customtkinter` - Modern UI framework
-- `pystray` - System tray integration
-- `pillow` - Image processing
-- `hPyT` - Window transparency effects
-- `pywinstyles` - Windows styling
-
 ## Usage
 
 ### Starting FASKY
 for all apps:
 ```bash
-python auto5.py
+python app.py
 ```
 for only the keyboard functions without the desktop manager:
 ```bash
-python app.py
+python faskyMain.py
 ```
 ## Desktop Profile Manager Features
 

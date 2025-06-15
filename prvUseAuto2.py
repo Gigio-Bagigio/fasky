@@ -1,8 +1,5 @@
-import os
 import sys
 import tkinter as tk
-from tkinter import ttk, messagebox, simpledialog
-from threading import Thread
 import argparse
 
 # Importa le classi e funzioni dal file originale
@@ -11,7 +8,6 @@ try:
         AppFinder, 
         ProfileManager, 
         ProfileEditorWindow,
-        LoadingDialog
     )
 except ImportError:
     print("Errore: File auto5.py non trovato.")

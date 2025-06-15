@@ -8,7 +8,7 @@ import os
 import subprocess
 import base64
 import json
-from typing import Dict, Any
+from typing import Dict
 from dataclasses import dataclass
 
 import pyautogui as pya

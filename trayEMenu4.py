@@ -1,27 +1,19 @@
 import os
 import customtkinter as ctk
-from tkinter import messagebox, filedialog, ttk
+from tkinter import messagebox, filedialog
 import winreg
 import shutil as sht
 import subprocess
-import pywinstyles
 from hPyT import opacity  # hPyT==1.4.0 # opacity.set(windows, 0.9)
-from PIL import Image, ImageTk
 import time
 import threading
 import pystray  
 import sys
 import tkinter as tk
-from app import (
-    AppFinder, 
-    ProfileManager, 
-    ProfileEditorWindow, 
-    LoadingDialog,
-    execute_profile,
-    App
-)
-from prvUseAuto2 import create_profile, execute_profile, profile_manager, aggiorna
-from faskyMain import FaskyApp
+from app import execute_profile
+from PIL import Image
+from prvUseAuto2 import create_profile, execute_profile, aggiorna
+
 root = None
 _app = None
 auto = None

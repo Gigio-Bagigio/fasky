@@ -14,11 +14,7 @@ import sys
 import re
 import winreg
 import enum
-import socket
-import threading
-import time
-import pystray
-from PIL import Image
+
 
 #from trayEMenu4 import get_profiles, change_profile causa errore di importazione circolare quindi bisogna reimportare il modulo
 import trayEMenu4
