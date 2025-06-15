@@ -9,9 +9,12 @@ FASKY is a comprehensive Windows productivity application that enhances your des
 
 ### Core FASKY Functions (faskyMain.py)
 - **QuickShift**: The main function that uses prolonged key pressure to exploit keys as shortcuts. By default, holding a character for more than 0.3s rewrites it in uppercase. Holding numeric characters produces symbols like arrows. All alphanumeric keys are customizable with both characters and entire sentences.
+
 ![til](quickShift.gif)
 - **Text Concatenator**: Avoids consecutive copy and paste operations. Press `Ctrl+Shift+C` to concatenate all copied text, then release with a simple `Ctrl+V`.
 - **Case Converter**: Fixes text case mistakes instantly. Select text and press `Shift + Caps Lock` to convert between uppercase and lowercase (abcd → ABCD).
+
+![til](caseConverter.gif)
 - **Translator**: Select text and press `Ctrl + F8` to translate between English and Italian with automatic language detection.
 - **Clipboard Manager**: Multiple clipboard slots for your notes (still in development with some bugs).
 
